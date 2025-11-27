@@ -7,10 +7,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.example.raionchallange.data.model.MoodType
+import com.example.raionchallange.ui.screens.mood.MoodSelectionScreen
+import com.example.raionchallange.ui.screens.musiclist.MusicListScreen
 import com.example.raionchallange.ui.theme.RaionChallangeTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,29 +20,34 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             RaionChallangeTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                MoodTunesApp()
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    RaionChallangeTheme {
-        Greeting("Android")
+fun MoodTunesApp() {
+    var selectedMood by remember { mutableStateOf<MoodType?>(null) }
+    
+    Scaffold(
+        modifier = Modifier.fillMaxSize()
+    ) { innerPadding ->
+        if (selectedMood == null) {
+            MoodSelectionScreen(
+                onMoodSelected = { mood ->
+                    selectedMood = mood
+                },
+                modifier = Modifier.padding(innerPadding)
+            )
+        } else {
+            MusicListScreen(
+                mood = selectedMood!!,
+                onBackClick = {
+                    selectedMood = null
+                },
+                modifier = Modifier.padding(innerPadding)
+            )
+        }
     }
 }
