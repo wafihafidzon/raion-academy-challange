@@ -24,32 +24,4 @@ enum class MoodType(
         gradientEnd = SadGradientEnd,
         emoji = "😢"
     ),
-    ENERGETIC(
-        displayName = "Berenergi",
-        description = "Musik penuh semangat untuk aktivitas intens",
-        gradientStart = EnergeticGradientStart,
-        gradientEnd = EnergeticGradientEnd,
-        emoji = "⚡"
-    ),
-    CHILL(
-        displayName = "Santai",
-        description = "Musik rileks untuk momen tenang",
-        gradientStart = ChillGradientStart,
-        gradientEnd = ChillGradientEnd,
-        emoji = "😌"
-    ),
-    ROMANTIC(
-        displayName = "Romantis",
-        description = "Lagu cinta untuk momen berdua",
-        gradientStart = RomanticGradientStart,
-        gradientEnd = RomanticGradientEnd,
-        emoji = "💕"
-    ),
-    FOCUS(
-        displayName = "Fokus",
-        description = "Musik instrumental untuk konsentrasi",
-        gradientStart = FocusGradientStart,
-        gradientEnd = FocusGradientEnd,
-        emoji = "🧠"
-    )
 }

@@ -22,18 +22,6 @@ val HappyGradientEnd = Color(0xFFFF6B9D) // Pink
 val SadGradientStart = Color(0xFF3B82F6) // Blue  
 val SadGradientEnd = Color(0xFF8B5CF6) // Purple
 
-val EnergeticGradientStart = Color(0xFFEF4444) // Red
-val EnergeticGradientEnd = Color(0xFFF97316) // Orange
-
-val ChillGradientStart = Color(0xFF10B981) // Green
-val ChillGradientEnd = Color(0xFF06B6D4) // Cyan
-
-val RomanticGradientStart = Color(0xFFEC4899) // Pink
-val RomanticGradientEnd = Color(0xFFBE185D) // Deep pink
-
-val FocusGradientStart = Color(0xFF6366F1) // Indigo
-val FocusGradientEnd = Color(0xFF8B5CF6) // Purple
-
 // Text Colors
 val WhiteAlpha90 = Color(0xE6FFFFFF)
 val GraySubtitle = Color(0xFF99A1AF)

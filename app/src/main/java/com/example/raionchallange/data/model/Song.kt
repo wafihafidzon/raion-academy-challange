@@ -1,9 +1,11 @@
 package com.example.raionchallange.data.model
 
 data class Song(
-    val id: Int,
+    val id: Int = 0,
     val title: String,
     val artist: String,
-    val duration: String, // Format: "3:45"
-    val mood: MoodType
+    val description: String = "", // Song description
+    val streamingUrl: String, // Spotify, Apple Music, YouTube Music, etc
+    val platform: MusicPlatform = MusicPlatform.SPOTIFY,
+    val moodId: Int
 )
