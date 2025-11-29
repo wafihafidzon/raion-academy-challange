@@ -34,10 +34,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.raionchallange.data.model.Mood
-import com.example.raionchallange.ui.components.AddMoodDialog
 import com.example.raionchallange.ui.components.DatabaseMoodCard
 import com.example.raionchallange.ui.components.DeleteConfirmationDialog
-import com.example.raionchallange.ui.components.EditMoodDialog
+import com.example.raionchallange.ui.components.dialogs.AddMoodDialog
+import com.example.raionchallange.ui.components.dialogs.EditMoodDialog
 import com.example.raionchallange.ui.theme.BackgroundGradientEnd
 import com.example.raionchallange.ui.theme.BackgroundGradientStart
 import com.example.raionchallange.ui.theme.GraySubtitle

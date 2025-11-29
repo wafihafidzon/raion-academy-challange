@@ -213,29 +213,29 @@ fun SongDetailScreen(
                 }
                 
                 // Alternative Browser Button
-                OutlinedButton(
-                    onClick = {
-                        openInBrowser(context, song.streamingUrl)
-                    },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(48.dp),
-                    shape = RoundedCornerShape(16.dp),
-                    border = ButtonDefaults.outlinedButtonBorder.copy(
-                        brush = Brush.horizontalGradient(
-                            colors = listOf(
-                                Color.White.copy(alpha = 0.3f),
-                                Color.White.copy(alpha = 0.1f)
-                            )
-                        )
-                    )
-                ) {
-                    Text(
-                        text = "Open in Browser",
-                        color = Color.White,
-                        style = MaterialTheme.typography.titleSmall
-                    )
-                }
+//                OutlinedButton(
+//                    onClick = {
+//                        openInBrowser(context, song.streamingUrl)
+//                    },
+//                    modifier = Modifier
+//                        .fillMaxWidth()
+//                        .height(48.dp),
+//                    shape = RoundedCornerShape(16.dp),
+//                    border = ButtonDefaults.outlinedButtonBorder.copy(
+//                        brush = Brush.horizontalGradient(
+//                            colors = listOf(
+//                                Color.White.copy(alpha = 0.3f),
+//                                Color.White.copy(alpha = 0.1f)
+//                            )
+//                        )
+//                    )
+//                ) {
+//                    Text(
+//                        text = "Open in Browser",
+//                        color = Color.White,
+//                        style = MaterialTheme.typography.titleSmall
+//                    )
+//                }
             }
             
             Spacer(modifier = Modifier.height(24.dp))

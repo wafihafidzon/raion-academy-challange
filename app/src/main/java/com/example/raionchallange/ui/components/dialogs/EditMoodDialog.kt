@@ -1,4 +1,4 @@
-package com.example.raionchallange.ui.components
+package com.example.raionchallange.ui.components.dialogs
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

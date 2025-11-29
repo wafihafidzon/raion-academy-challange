@@ -123,7 +123,7 @@ fun AddSongDialog(
                     value = streamingUrl,
                     onValueChange = { streamingUrl = it },
                     label = { Text("Streaming URL") },
-                    placeholder = { Text("https://open.spotify.com/track/...") },
+                    placeholder = { Text("Streaming URL") },
                     modifier = Modifier.fillMaxWidth(),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Uri),
                     singleLine = true
