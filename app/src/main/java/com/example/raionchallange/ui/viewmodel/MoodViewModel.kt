@@ -40,7 +40,7 @@ class MoodViewModel(
             try {
                 moodRepository.getAllMoods().collect { moodList ->
                     _moods.value = moodList
-                    _isLoading.value = false // Matikan loading setelah data pertama diterima
+                    _isLoading.value = false
                 }
             } catch (e: Exception) {
                 _errorMessage.value = "Gagal memuat data: ${e.message}"
@@ -55,7 +55,7 @@ class MoodViewModel(
                 moodRepository.createMoodWithRandomGradient(
                     name = name,
                     description = description,
-                    iconName = "ic_mood_default" // Default icon
+                    iconName = "ic_mood_default"
                 )
             } catch (e: Exception) {
                 _errorMessage.value = "Gagal menambah mood: ${e.message}"
