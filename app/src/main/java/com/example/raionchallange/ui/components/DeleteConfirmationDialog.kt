@@ -15,7 +15,7 @@ import androidx.compose.ui.window.Dialog
 @Composable
 fun DeleteConfirmationDialog(
     itemName: String,
-    itemType: String = "item", // "mood" or "song"
+    itemType: String = "item",
     onDismiss: () -> Unit,
     onConfirm: () -> Unit
 ) {

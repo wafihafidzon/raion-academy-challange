@@ -210,10 +210,8 @@ fun MoodSelectionScreen(
         }
     }
 
-    // Error message
     errorMessage?.let { message ->
         LaunchedEffect(message) {
-            // You can show a Snackbar here if needed
             viewModel.clearErrorMessage()
         }
     }

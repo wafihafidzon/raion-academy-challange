@@ -15,6 +15,7 @@ import com.example.raionchallange.data.model.Mood
 import com.example.raionchallange.data.repository.MoodRepository
 import com.example.raionchallange.ui.screens.mood.MoodSelectionScreen
 import com.example.raionchallange.ui.screens.musiclist.MusicListScreen
+import com.example.raionchallange.ui.screens.songdetail.SongDetailScreen
 import com.example.raionchallange.ui.theme.RaionChallangeTheme
 import com.example.raionchallange.ui.viewmodel.MoodViewModel
 import com.example.raionchallange.ui.viewmodel.ViewModelFactory
@@ -47,7 +48,7 @@ fun MoodTunesApp(factory: ViewModelFactory) {
     ) { innerPadding ->
         when {
             selectedSong != null -> {
-                com.example.raionchallange.ui.screens.songdetail.SongDetailScreen(
+                SongDetailScreen (
                     song = selectedSong!!,
                     onBackClick = {
                         selectedSong = null
